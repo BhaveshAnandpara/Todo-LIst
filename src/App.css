@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.border{
+  border : 2px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0px 16px;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#root{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 8px;
+
+}
+
+.title{
+  display: inline-block;
+}
+
+.navitems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50% , 25%);
+
+  padding: 4px;
+
+  font-weight: 600;
+  
+}
+
+.navitems > span:not(:nth-child(3)){
+  margin-right: 8vw;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.main-container > * {
+  width: 40%;
+  height: 500px;
+}
+
+
+
+.border-green{
+  /* border: 5px solid rgb(119, 212, 119); */
+  border-radius: 8px;
+
   display: flex;
   flex-direction: column;
+}
+
+.desc-input{
+  height: 120px;
+}
+
+.Todo-section{
+align-items: flex-start;
+margin: 0px 70px;
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+.Todo-section > span{
+
+  font-size: 5vh;
+  font-weight: 500;
+
+  width: 100%;
+
+}
+
+.todo-Items{
+  padding: 10px 40px;
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  /* border: 2px solid red; */
+
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
+  
+}
+
+.todo{
+
+  align-items: flex-start;
+  margin: 20px 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px 30px;
+
+  /* border: 2px solid yellow; */
+
+}
+
+.todo > * {
+  padding-bottom: 5px;
+  height: 100%;
+
+  
+  
+}
+
+.text-container{
+  width: 80%;
+  height: fit-content;
+}
+
+.text-container > p {
+  margin: 0%;
+}
+
+.btn-container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+
+  width: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-container > button{
+  border-radius: 6px ;
+  transform: scale(0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.delete{
+
+  background-color: rgb(255, 71, 71);
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+
+  color : white
+
 }
+
+.done{
+
+  background-color: rgb(71, 255, 141);
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  /* margin-bottom: 10px; */
+
+  color : white
+
+}
+
+.doneToDo{
+  text-decoration: line-through;
+  color: blue;
+}
+
+
